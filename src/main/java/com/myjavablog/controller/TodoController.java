@@ -28,12 +28,14 @@ public class TodoController {
 		Task t3 = new Task(3l, "Office", "Office at 9 AM", "COMPLETED");
 		Task t4 = new Task(4l, "Lunch", "Lunch at 1 PM", "PENDING");
 		Task t5 = new Task(5l, "Snacks", "Snacks at 6 PM", "PENDING");
-
+		Task t6 = new Task(6l, "Play", "Cricket at 2 PM", "PENDING");
+	
 		taskList.add(t1);
 		taskList.add(t2);
 		taskList.add(t3);
 		taskList.add(t4);
 		taskList.add(t5);
+		taskList.add(t6);
 	}
 
 	@RequestMapping(value = "/tasks", method = RequestMethod.GET, headers = "Accept=application/json")
